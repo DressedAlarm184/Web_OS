@@ -10,7 +10,7 @@ body {
 	top: 10px;
 	right: 10px;
 	width: 200px;
-	border-radius: 16px;
+	border-radius: 12px;
 	background: darkslategray;
 	height: 300px;
 	color: white;
@@ -24,13 +24,25 @@ body {
 		border-bottom: 3px solid #acacac;
 		padding: 2px;
 	}
+	overflow: hidden;
 }
 
 #programs.collapse {
 		height: 28px;
-		overflow: hidden;
 		width: 100px;
 	}
+	
+#programs .program {
+	padding: 2px 8px;
+	background-color: #203838;
+	border-radius: 8px;
+	margin: 8px;
+	border: 2px solid #acacac;
+}
+
+#program-list {
+	overflow: auto;
+}
 
 * {
 	font-family: Nunito;
