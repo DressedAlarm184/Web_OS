@@ -3,6 +3,7 @@
 body {
 	background: rgb(21, 21, 73);
 	font-size: 18px;
+	overflow: hidden;
 }
 
 #programs {
@@ -48,4 +49,39 @@ body {
 	font-family: Nunito;
 	font-weight: 600;
 	user-select: none;
+}
+
+.window {
+	background: #1a1a1a;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border: 3px solid #acacac;
+	border-radius: 12px;
+	iframe {
+		border: 0;
+	}
+	.titlebar {
+		height: 24px;
+		color: white;
+		border-bottom: 3px solid #acacac;
+		margin-bottom: 5px;
+		padding-top: 3px;
+		padding-inline: 10px;
+		background-color: #131313;
+		overflow: hidden;
+		border-top-left-radius: 9px;
+		border-top-right-radius: 9px;
+		.close {
+			position: absolute;
+			right: 7px;
+			top: -3px;
+			font-size: 24px;
+			font-weight: 800;
+			padding-inline: 5px;
+		}
+	}
+	iframe {
+		margin-inline: 5px;
+	}
 }
